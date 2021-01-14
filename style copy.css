@@ -1,0 +1,53 @@
+/* **************** Eléments principaux *****************/
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #181818;
+}
+
+/* Faire en sorte que input, select, textarea et button héritent la police de body. Pas d'héritage par défaut */
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+}
+
+#bloc_page {
+    margin: auto;
+}
+
+/* Les titres */
+h2 {
+    font-size: large;
+}
+
+/* Les listes */
+nav ul,
+footer ul {
+    list-style-type: none;
+}
+nav li:last-child {
+    font-weight: bold;
+}
+
+/* Les liens */
+nav a,
+footer a {
+    text-decoration: none;
+    color: #181818;
+}
+
+/* Les icones en bleu */
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog,
+.fa-info,
+.fa-star {
+    color: #0065fc;
+}
+
+/* **************** En-tête *****************/
+
+/* **************** Bannière *****************/
