@@ -1,8 +1,8 @@
 /* **************** Eléments principaux *****************/
-
 body {
     font-family: "Raleway", sans-serif;
     color: #181818;
+    margin: 0;
 }
 
 /* Faire en sorte que input, select, textarea et button héritent la police de body. Pas d'héritage par défaut */
@@ -45,30 +45,38 @@ a:visited {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin: 30px;
 }
 
 /* Logo */
-#logo img {
+header img {
     width: 4cm;
 }
 
+header a:nth-child(1) {
+    flex-grow: 3;
+}
+
 /* Menu */
+nav {
+    margin-right: 60px;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
 }
 
 nav li {
-    margin-inline-start: 60px;
+    margin-inline-end: 60px;
     font-weight: bold;
 }
 
-nav li:last-child a {
-    font-weight: bold;
-    color: #0065fc;
+nav li:last-child {
+    margin-right: 0;
 }
 
 nav li a:hover {
@@ -84,7 +92,7 @@ nav li a:hover {
 
 #barre-recherche {
     display: flex;
-    width: fit-content;
+    width: min-content;
     border: solid 1px #d9d9d9;
     border-radius: 8px;
     margin-top: 20px;
@@ -105,11 +113,10 @@ nav li a:hover {
     font-weight: bold;
     font-size: large;
     border: none;
-    width: fit-content;
     padding-left: 15px;
 }
 
-#barre-recherche .bouton {
+#barre-recherche .bouton-rechercher {
     color: white;
     background-color: #0065fc;
     font-weight: bold;
@@ -248,7 +255,7 @@ nav li a:hover {
 #hebergement-populaire .titre-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+
     justify-content: space-between;
 }
 
@@ -258,7 +265,9 @@ nav li a:hover {
 
 #liste-populaire {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #liste-populaire .carte-populaire {
@@ -295,18 +304,6 @@ nav li a:hover {
     color: #0065fc;
 }
 
-@media all and (max-width: 1024px) {
-    #section2-hebergement {
-        flex-direction: column;
-    }
-    #hebergement-recherche {
-        margin-right: 0;
-    }
-    #hebergement-populaire {
-        width: auto;
-    }
-}
-
 /* **************** Section 3 - Activites *****************/
 #section3-activite {
     margin: 20px 30px 30px 30px;
@@ -315,7 +312,7 @@ nav li a:hover {
 #liste-activite {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -332,7 +329,7 @@ nav li a:hover {
     transform: translateY(-10px);
 }
 
-#liste-activite .activite-colA .carte-activite p {
+#liste-activite .carte-activite p {
     margin-left: 15px;
     margin-top: 10px;
 }
@@ -351,11 +348,6 @@ nav li a:hover {
     margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
     transition: 0.2s;
-}
-
-#liste-activite .activite-colB .carte-activite p {
-    margin-left: 15px;
-    margin-top: 10px;
 }
 
 #liste-activite .activite-colB .carte-activite img {
@@ -388,4 +380,121 @@ footer li {
 
 footer a:hover {
     color: #0065fc;
+}
+
+/* **************** Responsive design *****************/
+/* Media query pour les petits ecrans */
+@media all and (max-width: 1024px) {
+    #section2-hebergement {
+        flex-direction: column;
+    }
+    #hebergement-recherche {
+        margin-right: 0;
+    }
+    #hebergement-populaire {
+        width: auto;
+    }
+}
+
+/* Media query pour les très petits ecrans */
+@media all and (max-width: 670px) {
+    header nav {
+        order: 3;
+    }
+
+    /* Logo */
+    header img {
+        width: 2.5cm;
+    }
+}
+
+/* Media query pour les smartphone */
+@media all and (max-device-width: 480px) {
+    body {
+        margin: 0;
+    }
+
+    header {
+        margin: 10px;
+    }
+
+    #section1-banniere {
+        margin: 10px;
+    }
+
+    /* Logo */
+    header img {
+        width: 2.5cm;
+    }
+
+    #filtre {
+        flex-direction: column;
+    }
+
+    #section2-hebergement {
+        margin: 0;
+    }
+
+    #section2-hebergement #hebergement-recherche {
+        order: 2;
+    }
+
+    #hebergement-recherche {
+        background-color: white;
+        padding: 20px;
+    }
+
+    #liste-hebergement .carte-hebergement {
+        width: 330px;
+        height: 200px;
+        padding: 0 0 10px 0;
+    }
+
+    #liste-hebergement .carte-hebergement img {
+        height: 60%;
+    }
+
+    #hebergement-populaire {
+        padding: 20px;
+    }
+
+    #liste-populaire .carte-populaire {
+        width: 330px;
+        height: 150px;
+    }
+
+    #liste-populaire .carte-populaire img {
+        width: 50%;
+    }
+
+    #liste-activite .activite-colA .carte-activite {
+        width: 330px;
+        height: 215px;
+        margin: 15px;
+    }
+
+    #liste-activite .activite-colA .carte-activite img {
+        width: 100%;
+        height: 80%;
+    }
+
+    #liste-activite .activite-colB .carte-activite {
+        width: 330px;
+        height: 215px;
+        margin: 15px;
+    }
+
+    #liste-activite .activite-colB .carte-activite img {
+        width: 100%;
+        height: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    footer .item-footer {
+        width: auto;
+    }
 }
