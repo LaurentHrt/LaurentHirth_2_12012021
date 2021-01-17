@@ -136,6 +136,10 @@ nav li a:hover {
     border: solid 1px #0065fc;
 }
 
+#barre-recherche .bouton-rechercher-icone {
+    display: none;
+}
+
 #filtre {
     display: flex;
     flex-direction: row;
@@ -410,9 +414,12 @@ footer a:hover {
     #section2-hebergement {
         flex-direction: column;
     }
-    #hebergement-recherche {
+
+    #section2-hebergement #hebergement-recherche {
         margin-right: 0;
+        order: 2;
     }
+
     #hebergement-populaire {
         width: auto;
     }
@@ -427,6 +434,14 @@ footer a:hover {
     /* Logo */
     header img {
         width: 2.5cm;
+    }
+
+    #barre-recherche .bouton-rechercher-icone {
+        display: inline;
+    }
+
+    #barre-recherche .bouton-rechercher-texte {
+        display: none;
     }
 }
 
@@ -446,10 +461,6 @@ footer a:hover {
 
     #section2-hebergement {
         margin: 0;
-    }
-
-    #section2-hebergement #hebergement-recherche {
-        order: 2;
     }
 
     #hebergement-recherche {
