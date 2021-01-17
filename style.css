@@ -2,7 +2,6 @@
 body {
     font-family: "Raleway", sans-serif;
     color: #181818;
-    margin: 0;
 }
 
 /* Faire en sorte que input, select, textarea et button héritent la police de body. Pas d'héritage par défaut */
@@ -92,7 +91,6 @@ nav li a:hover {
 
 #barre-recherche {
     display: flex;
-    justify-content: space-between;
     width: 60%;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -133,25 +131,6 @@ nav li a:hover {
 }
 
 #barre-recherche .bouton-rechercher:hover {
-    color: #0065fc;
-    background-color: white;
-    border: solid 1px #0065fc;
-}
-
-.bouton-rechercher2 {
-    visibility: collapse;
-    color: white;
-    background-color: #0065fc;
-    font-weight: bold;
-    font-size: large;
-    border: none;
-    border-radius: 0 8px 8px 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    transition: 0.2s;
-}
-
-.bouton-rechercher2:hover {
     color: #0065fc;
     background-color: white;
     border: solid 1px #0065fc;
@@ -337,7 +316,7 @@ nav li a:hover {
 
 /* **************** Section 3 - Activites *****************/
 #section3-activite {
-    margin: 20px 30px 30px 30px;
+    margin: 30px;
 }
 
 #liste-activite {
@@ -345,6 +324,13 @@ nav li a:hover {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#liste-activite .groupe-activite {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #liste-activite .activite-colA .carte-activite {
@@ -395,6 +381,7 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer div {
@@ -451,23 +438,6 @@ footer a:hover {
 
     header {
         margin: 10px;
-    }
-
-    #section1-banniere {
-        margin: 10px;
-    }
-
-    /* Logo */
-    header img {
-        width: 2.5cm;
-    }
-
-    .bouton-rechercher {
-        visibility: collapse;
-    }
-
-    .bouton-rechercher2 {
-        visibility: visible;
     }
 
     #filtre {
