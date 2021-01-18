@@ -11,6 +11,10 @@
 }
 
 /* **************** Eléments principaux *****************/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Raleway", sans-serif;
     color: #181818;
