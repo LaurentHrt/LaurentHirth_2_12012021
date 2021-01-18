@@ -33,10 +33,12 @@ button {
 h1 {
     margin-bottom: 15px;
     margin-top: 0px;
+    font-size: 1.3em;
 }
 
 h2 {
     font-size: large;
+    margin-right: 20px;
 }
 
 /* Les liens */
@@ -61,12 +63,20 @@ a:visited {
 header {
     display: flex;
     flex-wrap: wrap;
+    height: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 /* Logo */
+header #logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 3;
+}
+
 header img {
     width: 4cm;
-    padding-left: 30px;
 }
 
 header a:nth-child(1) {
@@ -89,14 +99,23 @@ nav ul {
 
 nav li {
     font-weight: bold;
-    border-top: solid 2px #f2f2f2;
+    border-top: solid 3px #f2f2f2;
     text-align: center;
     display: flex;
     align-items: center;
+    transition: 0.3s;
 }
 
 nav li a:hover {
     color: #0065fc;
+}
+
+nav li:hover {
+    border-color: #0065fc;
+}
+
+nav li:first-child {
+    border-color: #0065fc;
 }
 
 header .bouton-inscrire {
@@ -113,16 +132,17 @@ header .bouton-inscrire {
 
 #barre-recherche {
     display: flex;
-    width: 60%;
+    width: 420px;
     margin-top: 20px;
     margin-bottom: 15px;
+    border: solid 1px #f2f2f2;
+    border-radius: 15px;
 }
 
 #barre-recherche .fa-map-marker-alt {
     font-size: larger;
     background-color: #f2f2f2;
-    border: solid 1px #d9d9d9;
-    border-radius: 8px 0 0 8px;
+    border-radius: 15px 0 0 15px;
     width: 50px;
     text-align: center;
     padding-top: 15px;
@@ -130,11 +150,9 @@ header .bouton-inscrire {
 }
 
 #barre-recherche .textinput {
-    border: solid 1px #d9d9d9;
-    border-left: none;
+    border: none;
     font-weight: bold;
     font-size: large;
-
     padding-left: 15px;
     width: 100%;
     min-width: 150px;
@@ -146,7 +164,7 @@ header .bouton-inscrire {
     font-weight: bold;
     font-size: large;
     border: none;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 15px 15px 0;
     padding-left: 15px;
     padding-right: 15px;
     transition: 0.2s;
@@ -159,6 +177,7 @@ header .bouton-inscrire {
 }
 
 #barre-recherche .bouton-rechercher-icone {
+    border-radius: 15px;
     display: none;
 }
 
@@ -179,12 +198,11 @@ header .bouton-inscrire {
     font-weight: 600;
     border-radius: 100px;
     border: solid 2px #d9d9d9;
-    margin-inline-start: 30px;
     padding-right: 10px;
     border-left: none;
-    text-align: center;
     transition: 0.2s;
     margin-bottom: 15px;
+    margin-right: 20px;
 }
 
 #filtre .item-filtre:hover {
@@ -232,7 +250,7 @@ header .bouton-inscrire {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 40px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -283,7 +301,7 @@ header .bouton-inscrire {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 40px;
     margin-bottom: 30px;
 }
@@ -429,10 +447,6 @@ footer a:hover {
 /* **************** Responsive design *****************/
 /* Media query pour les petits ecrans */
 @media all and (max-width: 1024px) {
-    #barre-recherche {
-        width: 100%;
-    }
-
     #section2-hebergement {
         flex-direction: column;
     }
@@ -449,6 +463,11 @@ footer a:hover {
 
 /* Media query pour les très petits ecrans */
 @media all and (max-width: 670px) {
+    header {
+        margin: 15px 0 0 0;
+        height: 110px;
+    }
+
     header nav {
         order: 3;
         width: 100%;
@@ -457,6 +476,21 @@ footer a:hover {
     /* Logo */
     header img {
         width: 2.5cm;
+        padding-left: 20px;
+    }
+
+    header .bouton-inscrire {
+        padding-right: 20px;
+    }
+
+    nav li {
+        border-bottom: solid 3px #f2f2f2;
+        border-top: none;
+        width: 100%;
+    }
+
+    #barre-recherche {
+        width: 100%;
     }
 
     #barre-recherche .bouton-rechercher-icone {
@@ -469,28 +503,9 @@ footer a:hover {
 }
 
 /* Media query pour les smartphone */
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
     body {
         margin: 0;
-    }
-
-    header {
-        align-items: center;
-    }
-
-    header img {
-        padding-left: 10px;
-    }
-
-    header .bouton-inscrire {
-        padding-right: 10px;
-    }
-
-    nav li {
-        border-bottom: solid 2px #f2f2f2;
-        border-top: none;
-        padding: 0;
-        width: 100%;
     }
 
     header .bouton-inscrire {
@@ -499,6 +514,14 @@ footer a:hover {
 
     #filtre {
         flex-direction: column;
+    }
+
+    #filtre .item-filtre {
+        margin-right: 10px;
+    }
+
+    #section1-banniere {
+        margin: 20px;
     }
 
     #section2-hebergement {
@@ -522,6 +545,10 @@ footer a:hover {
 
     #hebergement-populaire {
         padding: 20px;
+    }
+
+    #section3-activite {
+        margin: 20px;
     }
 
     #liste-populaire .carte-populaire {
@@ -558,6 +585,10 @@ footer a:hover {
     footer {
         flex-direction: column;
         padding-bottom: 20px;
+    }
+
+    footer ul {
+        padding-left: 20px;
     }
 
     footer .item-footer {
