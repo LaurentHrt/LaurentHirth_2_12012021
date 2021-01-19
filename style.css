@@ -242,7 +242,6 @@ header .bouton-inscrire {
 /* **************** Section 2 - Hebergement *****************/
 #section2-hebergement {
     display: flex;
-    flex-direction: row;
     margin: 30px;
 }
 
@@ -262,7 +261,6 @@ header .bouton-inscrire {
 
 #liste-hebergement {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -275,9 +273,9 @@ header .bouton-inscrire {
     width: 275px;
     height: 225px;
     border-radius: 30px;
-    margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
-    padding: 5px 5px 10px 5px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
     transition: 0.2s;
 }
 
@@ -294,10 +292,12 @@ header .bouton-inscrire {
     width: auto;
     height: 70%;
     border-radius: 30px 30px 0px 0px;
+    margin: 5px;
 }
 
 #hebergement-populaire {
-    width: 440px;
+    min-width: 320px;
+    max-width: 350;
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
@@ -319,20 +319,17 @@ header .bouton-inscrire {
 
 #liste-populaire {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #liste-populaire .carte-populaire {
     background-color: white;
     display: flex;
-    width: 400px;
+    width: 100%;
     height: 160px;
     border-radius: 30px;
-    margin: 15px;
+    margin-bottom: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
-    padding: 5px;
     transition: 0.2s;
 }
 
@@ -345,6 +342,7 @@ header .bouton-inscrire {
     width: 40%;
     height: auto;
     border-radius: 30px 0px 0px 30px;
+    margin: 5px;
 }
 
 #liste-populaire .carte-populaire .carte-populaire-description {
@@ -445,7 +443,7 @@ footer a:hover {
 }
 
 /* **************** Responsive design *****************/
-/* Media query pour les petits ecrans */
+/* Petits ecrans (En dessous de 992px)*/
 @media all and (max-width: 992px) {
     #section2-hebergement {
         flex-direction: column;
@@ -457,11 +455,11 @@ footer a:hover {
     }
 
     #hebergement-populaire {
-        width: auto;
+        max-width: none;
     }
 }
 
-/* Media query pour les tablettes/smartphones */
+/* Tablettes/smartphones (En dessous de 600px) */
 @media all and (max-width: 600px) {
     header {
         margin: 15px 0 0 0;
@@ -530,18 +528,22 @@ footer a:hover {
         padding: 20px;
     }
 
+    #liste-hebergement {
+        flex-direction: column;
+    }
+
     #liste-hebergement .carte-hebergement {
-        width: 330px;
+        width: 100%;
         height: 200px;
-        padding: 0 0 10px 0;
     }
 
     #liste-hebergement .carte-hebergement img {
-        height: 60%;
+        height: 55%;
     }
 
     #hebergement-populaire {
         padding: 20px;
+        border-radius: 0;
     }
 
     #section3-activite {
@@ -549,12 +551,8 @@ footer a:hover {
     }
 
     #liste-populaire .carte-populaire {
-        width: 330px;
+        width: 100%;
         height: 150px;
-    }
-
-    #liste-populaire .carte-populaire img {
-        width: 50%;
     }
 
     #liste-activite .activite-colA .carte-activite {
