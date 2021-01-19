@@ -212,7 +212,6 @@ header .bouton-inscrire {
     align-items: center;
     margin-right: 25px;
     margin-bottom: 13px;
-    padding-right: 5px;
 }
 
 #filtre .icone-filtre {
@@ -235,6 +234,7 @@ header .bouton-inscrire {
 
 #filtre .item-filtre span {
     white-space: nowrap;
+    padding-right: 5px;
 }
 
 #information i {
