@@ -446,7 +446,7 @@ footer a:hover {
 
 /* **************** Responsive design *****************/
 /* Media query pour les petits ecrans */
-@media all and (max-width: 1024px) {
+@media all and (max-width: 992px) {
     #section2-hebergement {
         flex-direction: column;
     }
@@ -461,8 +461,8 @@ footer a:hover {
     }
 }
 
-/* Media query pour les très petits ecrans */
-@media all and (max-width: 670px) {
+/* Media query pour les tablettes/smartphones */
+@media all and (max-width: 600px) {
     header {
         margin: 15px 0 0 0;
         height: 110px;
@@ -500,10 +500,7 @@ footer a:hover {
     #barre-recherche .bouton-rechercher-texte {
         display: none;
     }
-}
 
-/* Media query pour les smartphone */
-@media all and (max-width: 480px) {
     body {
         margin: 0;
     }
