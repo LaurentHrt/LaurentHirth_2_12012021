@@ -200,15 +200,28 @@ header .bouton-inscrire {
 }
 
 #filtre .item-filtre {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-column-gap: 5px;
     font-weight: 600;
     border-radius: 100px;
     border: solid 2px #d9d9d9;
-    padding-right: 10px;
-    border-left: none;
     transition: 0.2s;
-    margin: 10px;
+    height: 50px;
+    justify-items: stretch;
+    align-items: center;
+    margin-right: 25px;
+    margin-bottom: 13px;
+    padding-right: 5px;
+}
+
+#filtre .icone-filtre {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #deebff;
 }
 
 #filtre .item-filtre:hover {
@@ -218,17 +231,10 @@ header .bouton-inscrire {
 
 #filtre .item-filtre i {
     background-color: #deebff;
-    border-radius: 50%;
-    width: 43px;
-    margin-right: 5px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 #filtre .item-filtre span {
     white-space: nowrap;
-    padding-top: 13px;
 }
 
 #information i {
