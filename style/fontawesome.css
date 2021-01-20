@@ -6089,34 +6089,10 @@ readers do not read off random characters that represent icons */
     position: static;
     width: auto;
 }
-@font-face {
-    font-family: "Font Awesome 5 Brands";
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url("../polices/fa-brands-400.eot");
-    src: url("../polices/fa-brands-400.eot?#iefix") format("embedded-opentype"),
-        url("../polices/fa-brands-400.woff2") format("woff2"),
-        url("../polices/fa-brands-400.woff") format("woff"),
-        url("../polices/fa-brands-400.ttf") format("truetype"),
-        url("../polices/fa-brands-400.svg#fontawesome") format("svg");
-}
 
 .fab {
     font-family: "Font Awesome 5 Brands";
     font-weight: 400;
-}
-@font-face {
-    font-family: "Font Awesome 5 Free";
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url("../polices/fa-regular-400.eot");
-    src: url("../polices/fa-regular-400.eot?#iefix") format("embedded-opentype"),
-        url("../polices/fa-regular-400.woff2") format("woff2"),
-        url("../polices/fa-regular-400.woff") format("woff"),
-        url("../polices/fa-regular-400.ttf") format("truetype"),
-        url("../polices/fa-regular-400.svg#fontawesome") format("svg");
 }
 
 .far {
@@ -6130,7 +6106,6 @@ readers do not read off random characters that represent icons */
     font-display: block;
     src: url("../polices/fa-solid-900.eot");
     src: url("../polices/fa-solid-900.eot?#iefix") format("embedded-opentype"),
-        url("../polices/fa-solid-900.woff2") format("woff2"),
         url("../polices/fa-solid-900.woff") format("woff"),
         url("../polices/fa-solid-900.ttf") format("truetype"),
         url("../polices/fa-solid-900.svg#fontawesome") format("svg");
