@@ -52,6 +52,10 @@ a:visited {
     transition: 0.2s;
 }
 
+.liste > a {
+    display: contents;
+}
+
 /* Les icones en bleu */
 .fa-money-bill-wave,
 .fa-child,
