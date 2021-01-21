@@ -20,7 +20,8 @@ html {
 body {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: ;
     color: #181818;
     margin: 0px;
 }
@@ -37,7 +38,7 @@ button {
 h1 {
     margin-bottom: 5px;
     margin-top: 0px;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -170,6 +171,9 @@ nav li:hover {
 nav li:first-child {
     border-color: #0065fc;
 }
+nav li:first-child a {
+    color: #0065fc;
+}
 
 header .bouton-inscrire {
     display: flex;
@@ -234,6 +238,7 @@ header .bouton-inscrire {
 
 #barre-recherche .bouton-rechercher-icone {
     border-radius: 15px;
+    font-size: 15px;
     display: none;
 }
 
@@ -288,7 +293,11 @@ header .bouton-inscrire {
 
 #filtre .item-filtre span {
     white-space: nowrap;
-    padding-right: 5px;
+    padding: 0 15px 0 5px;
+}
+
+#information {
+    display: flex;
 }
 
 #information i {
@@ -299,9 +308,10 @@ header .bouton-inscrire {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 10px;
+    font-size: 12px;
 }
 
-#information span {
+#information:last-child {
     padding-top: 5px;
 }
 
@@ -348,7 +358,7 @@ header .bouton-inscrire {
 }
 
 .carte-hebergement-description {
-    padding: 5px 12px 5px 12px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -539,7 +549,7 @@ footer ul li:first-child {
     #liste-populaire .carte-populaire img {
         object-fit: cover;
         border-radius: 15px 0 0 15px;
-        width: 45%;
+        width: 40%;
     }
 
     .carte-populaire-description {
@@ -648,7 +658,7 @@ footer ul li:first-child {
     }
 
     .carte-hebergement img {
-        height: 65%;
+        height: 58%;
     }
 
     /* ******** Hebergement populaire  ******** */
@@ -661,6 +671,10 @@ footer ul li:first-child {
         row-gap: 10px;
     }
 
+    .carte-populaire {
+        height: 135px;
+    }
+
     /* *************** Section 3 - Activite  ************** */
     #section3-activite {
         margin: 35px 20px 20px 20px;
@@ -668,21 +682,17 @@ footer ul li:first-child {
 
     #liste-activite {
         display: block;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     #liste-activite .carte-activite {
-        height: 200px;
+        height: 190px;
         margin-bottom: 25px;
         justify-content: space-between;
     }
 
     #liste-activite .carte-activite-image {
         height: 70%;
-    }
-
-    #liste-activite .carte-activite-description {
-        padding: 0 0 0 15px;
     }
 
     /* ***************** Pied de page  ***************** */
