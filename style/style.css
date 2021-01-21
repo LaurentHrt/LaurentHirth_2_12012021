@@ -513,11 +513,13 @@ footer ul li:first-child {
 
     /* ************* Section 1 - Banniere  ************* */
     #section1-banniere {
-        margin: 20px;
+        margin: 35px 20px 40px 20px;
     }
 
     #barre-recherche {
         width: 100%;
+        margin-top: 35px;
+        margin-bottom: 35px;
     }
 
     #barre-recherche .bouton-rechercher-icone {
@@ -530,6 +532,7 @@ footer ul li:first-child {
 
     #filtre {
         flex-direction: column;
+        margin-bottom: 35px;
     }
 
     #filtre .item-filtre {
@@ -543,32 +546,40 @@ footer ul li:first-child {
 
     /* ******** Hebergement recherche  ******** */
     #hebergement-recherche {
+        display: block;
         background-color: white;
         padding: 20px;
     }
 
     #liste-hebergement {
         grid-template-columns: auto;
+        row-gap: 12px;
+        margin-bottom: 35px;
     }
 
     /* ******** Hebergement populaire  ******** */
     #hebergement-populaire {
-        padding: 20px;
+        padding: 20px 20px 35px 20px;
         border-radius: 0;
+    }
+
+    #liste-populaire {
+        row-gap: 10px;
     }
 
     /* *************** Section 3 - Activite  ************** */
     #section3-activite {
-        margin: 20px;
+        margin: 35px 20px 20px 20px;
     }
 
     #liste-activite {
         display: block;
+        margin-top: 30px;
     }
 
     #liste-activite .carte-activite {
         height: 200px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 
     #liste-activite .carte-activite-image {
@@ -582,7 +593,13 @@ footer ul li:first-child {
     /* ***************** Pied de page  ***************** */
     footer {
         flex-direction: column;
-        padding: 20px;
+        margin-top: 50px;
+        padding: 50px 30px 50px 30px;
+    }
+
+    footer ul:first-child,
+    footer h2 {
+        margin-top: 0;
     }
 
     footer .item-footer {
