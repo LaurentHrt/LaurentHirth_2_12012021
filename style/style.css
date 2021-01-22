@@ -49,14 +49,11 @@ h2 {
 a,
 a:visited {
     text-decoration: none;
-    color: #181818;
+    color: initial;
     transition: 0.2s;
 }
 
-.liste > a {
-    display: contents;
-}
-
+.liste > a,
 .carte > a {
     display: contents;
 }
@@ -87,6 +84,11 @@ section {
 
 .titre-section i {
     font-size: 1.4em;
+    padding-top: 5px;
+}
+
+.titre-section a:hover {
+    color: #0065fc;
 }
 
 .pied-section a:hover {
@@ -127,10 +129,14 @@ header {
     margin-left: 54px;
 }
 
-header #logo {
+#logo {
     display: flex;
     align-items: center;
     flex-grow: 3;
+}
+
+#logo a {
+    display: contents;
 }
 
 header img {
@@ -172,14 +178,8 @@ nav li:hover {
     border-color: #0065fc;
 }
 
-nav li:first-child {
-    border-color: #0065fc;
-}
-nav li:first-child a {
-    color: #0065fc;
-}
-
-header .bouton-inscrire {
+.bouton-inscrire,
+.bouton-inscrire:visited {
     display: flex;
     align-items: center;
     color: #0065fc;
@@ -211,9 +211,15 @@ header .bouton-inscrire {
     text-align: center;
     padding-top: 13px;
     padding-bottom: 13px;
+    transition: 0.2s;
 }
 
-#barre-recherche .textinput {
+#barre-recherche .fa-map-marker-alt:hover {
+    background-color: #0065fc;
+    color: white;
+}
+
+.textinput {
     border: none;
     font-weight: 700;
     padding-left: 15px;
@@ -222,7 +228,7 @@ header .bouton-inscrire {
     font-size: 18px;
 }
 
-#barre-recherche .bouton-rechercher {
+.bouton-rechercher {
     color: white;
     background-color: #0065fc;
     font-weight: 600;
@@ -234,13 +240,13 @@ header .bouton-inscrire {
     transition: 0.2s;
 }
 
-#barre-recherche .bouton-rechercher:hover {
+.bouton-rechercher:hover {
     color: #0065fc;
     background-color: white;
     border: solid 1px #0065fc;
 }
 
-#barre-recherche .bouton-rechercher-icone {
+.bouton-rechercher-icone {
     border-radius: 15px;
     font-size: 15px;
     display: none;
@@ -262,7 +268,7 @@ header .bouton-inscrire {
     flex-wrap: wrap;
 }
 
-#filtre .item-filtre {
+.item-filtre {
     display: grid;
     grid-template-columns: 50px auto;
     grid-column-gap: 5px;
@@ -277,7 +283,7 @@ header .bouton-inscrire {
     margin-bottom: 13px;
 }
 
-#filtre .icone-filtre {
+.icone-filtre {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -286,16 +292,16 @@ header .bouton-inscrire {
     background-color: #deebff;
 }
 
-#filtre .item-filtre:hover {
+.item-filtre:hover {
     color: #0065fc;
     transform: translateY(-4px);
 }
 
-#filtre .item-filtre i {
+.item-filtre i {
     background-color: #deebff;
 }
 
-#filtre .item-filtre span {
+.item-filtre span {
     white-space: nowrap;
     padding: 0 15px 0 5px;
 }
@@ -349,12 +355,12 @@ header .bouton-inscrire {
     margin-bottom: 40px;
 }
 
-#liste-hebergement .carte-hebergement {
+.carte-hebergement {
     flex-direction: column;
     padding: 5px;
 }
 
-#liste-hebergement .carte-hebergement img {
+.carte-hebergement img {
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
     width: 100%;
@@ -388,11 +394,11 @@ header .bouton-inscrire {
     margin-top: 20px;
 }
 
-#liste-populaire .carte-populaire {
+.carte-populaire {
     padding: 5px;
 }
 
-#liste-populaire .carte-populaire img {
+.carte-populaire img {
     object-fit: cover;
     border-radius: 15px 0 0 15px;
     width: 45%;
@@ -499,7 +505,7 @@ footer ul li:first-child {
         grid-template-columns: auto;
     }
 
-    #section2-hebergement #hebergement-recherche {
+    #hebergement-recherche {
         margin-right: 0;
         order: 2;
     }
@@ -517,7 +523,7 @@ footer ul li:first-child {
         flex-direction: column;
     }
 
-    #liste-populaire .carte-populaire img {
+    .carte-populaire img {
         object-fit: cover;
         border-radius: 15px 15px 0px 0px;
         width: 100%;
@@ -540,11 +546,11 @@ footer ul li:first-child {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
-    #liste-populaire .carte-populaire {
+    .carte-populaire {
         flex-direction: row;
     }
 
-    #liste-populaire .carte-populaire img {
+    .carte-populaire img {
         object-fit: cover;
         border-radius: 15px 0 0 15px;
         width: 40%;
@@ -559,12 +565,12 @@ footer ul li:first-child {
         grid-template-rows: repeat(4, minmax(0, 1fr));
     }
 
-    #liste-activite .carte-activite:first-child {
+    .carte-activite:first-child {
         grid-row-start: 1;
         grid-row-end: 3;
     }
 
-    #liste-activite .carte-activite:nth-child(4) {
+    .carte-activite:nth-child(4) {
         grid-row-start: 3;
         grid-row-end: 5;
         grid-column-start: 2;
@@ -616,11 +622,11 @@ footer ul li:first-child {
         margin-bottom: 35px;
     }
 
-    #barre-recherche .bouton-rechercher-icone {
+    .bouton-rechercher-icone {
         display: inline;
     }
 
-    #barre-recherche .bouton-rechercher-texte {
+    .bouton-rechercher-texte {
         display: none;
     }
 
@@ -683,13 +689,13 @@ footer ul li:first-child {
         margin-top: 25px;
     }
 
-    #liste-activite .carte-activite {
+    .carte-activite {
         height: 190px;
         margin-bottom: 25px;
         justify-content: space-between;
     }
 
-    #liste-activite .carte-activite-image {
+    .carte-activite-image {
         height: 70%;
     }
 
