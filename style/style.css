@@ -21,7 +21,6 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 15px;
-    font-weight: ;
     color: #181818;
     margin: 0px;
 }
@@ -55,6 +54,10 @@ a:visited {
 }
 
 .liste > a {
+    display: contents;
+}
+
+.carte > a {
     display: contents;
 }
 
@@ -101,6 +104,7 @@ ul {
 }
 
 .carte {
+    display: flex;
     background-color: white;
     transition: 0.2s;
     border-radius: 20px;
@@ -346,7 +350,6 @@ header .bouton-inscrire {
 }
 
 #liste-hebergement .carte-hebergement {
-    display: flex;
     flex-direction: column;
     padding: 5px;
 }
@@ -386,7 +389,6 @@ header .bouton-inscrire {
 }
 
 #liste-populaire .carte-populaire {
-    display: flex;
     padding: 5px;
 }
 
@@ -420,35 +422,34 @@ header .bouton-inscrire {
     margin-top: 15px;
 }
 
-#liste-activite .carte-activite:first-child {
+.carte-activite {
+    flex-direction: column;
+}
+
+.carte-activite:first-child {
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-#liste-activite .carte-activite:nth-child(4) {
+.carte-activite:nth-child(4) {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 4;
 }
 
-#liste-activite .carte-activite {
-    display: flex;
-    flex-direction: column;
-}
-
-#liste-activite .carte-activite-description {
+.carte-activite-description {
     padding: 20px;
     font-weight: 700;
     font-size: 15px;
     flex-grow: 2;
 }
 
-#liste-activite .carte-activite-image {
+.carte-activite-image {
     height: 100%;
 }
 
-#liste-activite .carte-activite-image img {
+.carte-activite-image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -524,9 +525,6 @@ footer ul li:first-child {
 
     .carte-populaire-description {
         padding: 5px 12px 5px 12px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         flex-grow: 2;
     }
 }
