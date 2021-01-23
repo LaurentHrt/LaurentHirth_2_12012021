@@ -80,15 +80,24 @@ section {
 .titre-section {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .titre-section i {
-    font-size: 1.4em;
-    padding-top: 5px;
+    font-size: 1.1em;
 }
 
 .titre-section a:hover {
     color: #0065fc;
+}
+
+.pied-section {
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 10px 15px 0;
 }
 
 .pied-section a:hover {
@@ -341,7 +350,7 @@ nav li:hover {
     flex-direction: column;
 }
 
-#hebergement-recherche .pied-section h2 {
+#hebergement-recherche .pied-section {
     margin: 0px;
 }
 
