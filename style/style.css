@@ -139,10 +139,12 @@ header {
     margin-left: 54px;
 }
 
-#logo {
+header div {
     display: flex;
     align-items: center;
-    flex-grow: 3;
+    justify-content: center;
+    border-top: solid 3px white;
+    transition: 0.3s;
 }
 
 #logo a {
@@ -153,45 +155,34 @@ header img {
     width: 98px;
 }
 
-header a:nth-child(1) {
-    flex-grow: 3;
-}
-
 /* *********************** Menu ************************ */
 nav {
-    flex-grow: 0.7;
-}
-
-nav ul {
+    flex-grow: 2;
     display: flex;
-    justify-content: space-evenly;
-    padding: 0;
-    margin: 0;
-    height: 100%;
+    justify-content: right;
 }
 
-nav li {
+nav a {
+    display: contents;
+}
+
+nav div {
+    width: 8em;
     font-weight: 500;
-    border-top: solid 3px #f2f2f2;
     text-align: center;
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
-    width: 9em;
 }
 
-nav li a:hover {
+nav div:hover {
+    border-color: #0065fc;
     color: #0065fc;
 }
 
-nav li:hover {
-    border-color: #0065fc;
+.bouton-inscrire {
+    margin-left: 20px;
 }
 
-.bouton-inscrire,
-.bouton-inscrire:visited {
-    display: flex;
-    align-items: center;
+.bouton-inscrire a,
+.bouton-inscrire a:visited {
     color: #0065fc;
     font-weight: 700;
 }
@@ -480,11 +471,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0 50px 50px;
+    padding: 20px 0 35px 50px;
     margin-top: 60px;
 }
 
-footer .item-footer {
+.item-footer {
     width: 30%;
 }
 
@@ -588,8 +579,8 @@ footer ul li:first-child {
     }
 }
 
-/* ************ Smartphones < 500px  ************ */
-@media all and (max-width: 500px) {
+/* ************ Smartphones < 550px  ************ */
+@media all and (max-width: 550px) {
     /* ************ Elements generaux  ************ */
     body {
         margin: 0;
@@ -599,6 +590,7 @@ footer ul li:first-child {
     header {
         margin: 15px 0 0 0;
         height: 110px;
+        justify-content: space-between;
     }
 
     header img {
@@ -610,15 +602,15 @@ footer ul li:first-child {
         width: 100%;
     }
 
-    header .bouton-inscrire {
-        padding-right: 20px;
-        padding-top: 0;
-    }
-
-    nav li {
+    nav div {
         border-bottom: solid 3px #f2f2f2;
         border-top: none;
         width: 100%;
+    }
+
+    .bouton-inscrire {
+        padding-right: 20px;
+        padding-top: 0;
     }
 
     /* ************* Section 1 - Banniere  ************* */
@@ -713,7 +705,7 @@ footer ul li:first-child {
     footer {
         flex-direction: column;
         margin-top: 50px;
-        padding: 50px 30px 50px 30px;
+        padding: 50px 30px 0 30px;
     }
 
     footer ul:first-child,
@@ -721,7 +713,8 @@ footer ul li:first-child {
         margin-top: 0;
     }
 
-    footer .item-footer {
+    .item-footer {
         width: auto;
+        margin-bottom: 30px;
     }
 }
