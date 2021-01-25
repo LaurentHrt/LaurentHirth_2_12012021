@@ -159,7 +159,7 @@ header img {
 nav {
     flex-grow: 2;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 nav a {
