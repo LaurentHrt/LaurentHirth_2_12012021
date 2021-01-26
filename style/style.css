@@ -139,10 +139,12 @@ header {
     margin-left: 54px;
 }
 
-#logo {
+header div {
     display: flex;
     align-items: center;
-    flex-grow: 3;
+    justify-content: center;
+    border-top: solid 3px white;
+    transition: 0.3s;
 }
 
 #logo a {
@@ -153,45 +155,34 @@ header img {
     width: 98px;
 }
 
-header a:nth-child(1) {
-    flex-grow: 3;
-}
-
 /* *********************** Menu ************************ */
 nav {
-    flex-grow: 0.7;
-}
-
-nav ul {
+    flex-grow: 2;
     display: flex;
-    justify-content: space-evenly;
-    padding: 0;
-    margin: 0;
-    height: 100%;
+    justify-content: flex-end;
 }
 
-nav li {
+nav a {
+    display: contents;
+}
+
+nav div {
+    width: 8em;
     font-weight: 500;
-    border-top: solid 3px #f2f2f2;
     text-align: center;
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
-    width: 9em;
 }
 
-nav li a:hover {
+nav div:hover {
+    border-color: #0065fc;
     color: #0065fc;
 }
 
-nav li:hover {
-    border-color: #0065fc;
+.bouton-inscrire {
+    margin-left: 20px;
 }
 
-.bouton-inscrire,
-.bouton-inscrire:visited {
-    display: flex;
-    align-items: center;
+.bouton-inscrire a,
+.bouton-inscrire a:visited {
     color: #0065fc;
     font-weight: 700;
 }
@@ -480,11 +471,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0 50px 50px;
+    padding: 20px 0 35px 50px;
     margin-top: 60px;
 }
 
-footer .item-footer {
+.item-footer {
     width: 30%;
 }
 
@@ -502,226 +493,4 @@ footer a:hover {
 
 footer ul li:first-child {
     margin-bottom: 20px;
-}
-
-/* ******************************************************** */
-/* ******************* Media queries  ********************* */
-/* ******************************************************** */
-
-/* *************** Petits ecrans < 1200px  ***************** */
-@media all and (max-width: 1200px) {
-    #section2-hebergement {
-        grid-template-rows: auto auto;
-        grid-template-columns: auto;
-    }
-
-    #hebergement-recherche {
-        margin-right: 0;
-        order: 2;
-    }
-
-    #hebergement-populaire {
-        max-width: none;
-    }
-
-    #liste-populaire {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-template-rows: auto;
-    }
-
-    .carte-populaire {
-        flex-direction: column;
-    }
-
-    .carte-populaire img {
-        object-fit: cover;
-        border-radius: 15px 15px 0px 0px;
-        width: 100%;
-    }
-
-    .carte-populaire-description {
-        padding: 5px 12px 5px 12px;
-        flex-grow: 2;
-    }
-}
-
-/* *************** Tablettes < 768px  ***************** */
-@media all and (max-width: 768px) {
-    #liste-hebergement {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-rows: auto auto auto;
-    }
-
-    #liste-populaire {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-
-    .carte-populaire {
-        flex-direction: row;
-    }
-
-    .carte-populaire img {
-        object-fit: cover;
-        border-radius: 15px 0 0 15px;
-        width: 40%;
-    }
-
-    .carte-populaire-description {
-        padding: 15px 20px 10px 20px;
-    }
-
-    #liste-activite {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-rows: repeat(4, minmax(0, 1fr));
-    }
-
-    .carte-activite:first-child {
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-
-    .carte-activite:nth-child(4) {
-        grid-row-start: 3;
-        grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-}
-
-/* ************ Smartphones < 500px  ************ */
-@media all and (max-width: 500px) {
-    /* ************ Elements generaux  ************ */
-    body {
-        margin: 0;
-    }
-
-    /* ***************** En tete  ***************** */
-    header {
-        margin: 15px 0 0 0;
-        height: 110px;
-    }
-
-    header img {
-        padding-left: 20px;
-    }
-
-    header nav {
-        order: 3;
-        width: 100%;
-    }
-
-    header .bouton-inscrire {
-        padding-right: 20px;
-        padding-top: 0;
-    }
-
-    nav li {
-        border-bottom: solid 3px #f2f2f2;
-        border-top: none;
-        width: 100%;
-    }
-
-    /* ************* Section 1 - Banniere  ************* */
-    #section1-banniere {
-        margin: 35px 20px 40px 20px;
-    }
-
-    #barre-recherche {
-        width: 100%;
-        margin-top: 35px;
-        margin-bottom: 35px;
-    }
-
-    .bouton-rechercher-icone {
-        display: inline;
-    }
-
-    .bouton-rechercher-texte {
-        display: none;
-    }
-
-    #filtre {
-        flex-direction: column;
-        margin-bottom: 35px;
-    }
-
-    #filtre .item-filtre {
-        margin-right: 10px;
-    }
-
-    /* ************* Section 2 - Hebergement  ************* */
-    #section2-hebergement {
-        margin: 0;
-    }
-
-    /* ******** Hebergement recherche  ******** */
-    #hebergement-recherche {
-        display: block;
-        background-color: white;
-        padding: 20px;
-    }
-
-    #liste-hebergement {
-        grid-template-columns: auto;
-        row-gap: 12px;
-        margin-bottom: 35px;
-    }
-
-    .carte-hebergement {
-        height: 12rem;
-    }
-
-    .carte-hebergement img {
-        height: 58%;
-    }
-
-    /* ******** Hebergement populaire  ******** */
-    #hebergement-populaire {
-        padding: 20px 20px 35px 20px;
-        border-radius: 0;
-    }
-
-    #liste-populaire {
-        row-gap: 10px;
-    }
-
-    .carte-populaire {
-        height: 135px;
-    }
-
-    /* *************** Section 3 - Activite  ************** */
-    #section3-activite {
-        margin: 35px 20px 20px 20px;
-    }
-
-    #liste-activite {
-        display: block;
-        margin-top: 25px;
-    }
-
-    .carte-activite {
-        height: 190px;
-        margin-bottom: 25px;
-        justify-content: space-between;
-    }
-
-    .carte-activite-image {
-        height: 70%;
-    }
-
-    /* ***************** Pied de page  ***************** */
-    footer {
-        flex-direction: column;
-        margin-top: 50px;
-        padding: 50px 30px 50px 30px;
-    }
-
-    footer ul:first-child,
-    footer h2 {
-        margin-top: 0;
-    }
-
-    footer .item-footer {
-        width: auto;
-    }
 }

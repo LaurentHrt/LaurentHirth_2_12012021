@@ -1,0 +1,36 @@
+/* *************** Petits ecrans < 1200px  ***************** */
+
+/* ************* Section 2 - Hebergement  ************* */
+#section2-hebergement {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+}
+
+#hebergement-recherche {
+    margin-right: 0;
+    order: 2;
+}
+
+#hebergement-populaire {
+    max-width: none;
+}
+
+#liste-populaire {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+}
+
+.carte-populaire {
+    flex-direction: column;
+}
+
+.carte-populaire img {
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+
+.carte-populaire-description {
+    padding: 5px 12px 5px 12px;
+    flex-grow: 2;
+}

@@ -5,7 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Fontawesome pour les icones -->
         <link rel="stylesheet" href="style/fontawesome.css" />
+        <!-- Feuilles de syles pour chaque taille d'ecran (3 breakpoints) -->
         <link rel="stylesheet" href="style/style.css" />
+        <link
+            rel="stylesheet"
+            media="all and (max-width: 1200px)"
+            href="style/petitEcran.css"
+        />
+        <link
+            rel="stylesheet"
+            media="all and (max-width: 768px)"
+            href="style/tablette.css"
+        />
+        <link
+            rel="stylesheet"
+            media="all and (max-width: 550px)"
+            href="style/smartphone.css"
+        />
         <link
             rel="shortcut icon"
             href="images/favicon.ico"
@@ -23,17 +39,12 @@
             </div>
 
             <nav>
-                <ul>
-                    <li>
-                        <a href="#section2-hebergement">Hébergements</a>
-                    </li>
-                    <li>
-                        <a href="#section3-activite">Activités</a>
-                    </li>
-                </ul>
+                <a href="#section2-hebergement"><div>Hébergements</div></a>
+                <a href="#section3-activite"><div>Activités</div></a>
             </nav>
-
-            <a class="bouton-inscrire" href="#">S'inscrire</a>
+            <div class="bouton-inscrire">
+                <a href="#">S'inscrire</a>
+            </div>
         </header>
 
         <section id="section1-banniere">
@@ -426,7 +437,9 @@
                 <ul>
                     <li><h2>Assistance</h2></li>
                     <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
+                    <li>
+                        <a href="mailto:reservia@contact.com">Nous contacter</a>
+                    </li>
                 </ul>
             </div>
         </footer>
