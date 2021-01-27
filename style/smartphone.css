@@ -2,137 +2,137 @@
 
 /* ************ Elements generaux  ************ */
 body {
-    margin: 0;
+	margin: 0;
 }
 
 /* ***************** En tete  ***************** */
 header {
-    margin: 15px 0 0 0;
-    height: 110px;
-    justify-content: space-between;
+	margin: 15px 0 0 0;
+	height: 110px;
+	justify-content: space-between;
 }
 
 header img {
-    padding-left: 20px;
+	padding-left: 20px;
 }
 
 header nav {
-    order: 3;
-    width: 100%;
+	order: 3;
+	width: 100%;
 }
 
 nav div {
-    border-bottom: solid 3px #f2f2f2;
-    border-top: none;
-    width: 100%;
+	border-bottom: solid 3px #f2f2f2;
+	border-top: none;
+	width: 100%;
 }
 
 .bouton-inscrire {
-    padding-right: 20px;
-    padding-top: 0;
+	padding-right: 20px;
+	padding-top: 0;
 }
 
 /* ************* Section 1 - Banniere  ************* */
 #section1-banniere {
-    margin: 35px 20px 40px 20px;
+	margin: 35px 20px 40px 20px;
 }
 
 #barre-recherche {
-    width: 100%;
-    margin-top: 35px;
-    margin-bottom: 35px;
+	width: 100%;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 .bouton-rechercher-icone {
-    display: inline;
+	display: inline;
 }
 
 .bouton-rechercher-texte {
-    display: none;
+	display: none;
 }
 
 #filtre {
-    flex-direction: column;
-    margin-bottom: 35px;
+	flex-direction: column;
+	margin-bottom: 35px;
 }
 
 #filtre .item-filtre {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 /* ************* Section 2 - Hebergement  ************* */
 #section2-hebergement {
-    margin: 0;
+	margin: 0;
 }
 
 /* ******** Hebergement recherche  ******** */
 #hebergement-recherche {
-    display: block;
-    background-color: white;
-    padding: 20px;
+	display: block;
+	background-color: white;
+	padding: 20px;
 }
 
 #liste-hebergement {
-    grid-template-columns: auto;
-    row-gap: 12px;
-    margin-bottom: 35px;
+	grid-template-columns: auto;
+	row-gap: 12px;
+	margin-bottom: 35px;
 }
 
 .carte-hebergement {
-    height: 12rem;
+	height: 12rem;
 }
 
 .carte-hebergement img {
-    height: 58%;
+	height: 58%;
 }
 
 /* ******** Hebergement populaire  ******** */
 #hebergement-populaire {
-    padding: 20px 20px 35px 20px;
-    border-radius: 0;
+	padding: 20px 20px 35px 20px;
+	border-radius: 0;
 }
 
 #liste-populaire {
-    row-gap: 10px;
+	row-gap: 10px;
 }
 
 .carte-populaire {
-    height: 135px;
+	height: 135px;
 }
 
 /* *************** Section 3 - Activite  ************** */
 #section3-activite {
-    margin: 35px 20px 20px 20px;
+	margin: 35px 20px 20px 20px;
 }
 
 #liste-activite {
-    display: block;
-    margin-top: 25px;
+	display: block;
+	margin-top: 25px;
 }
 
 .carte-activite {
-    height: 190px;
-    margin-bottom: 25px;
-    justify-content: space-between;
+	height: 190px;
+	margin-bottom: 25px;
+	justify-content: space-between;
 }
 
 .carte-activite-image {
-    height: 70%;
+	height: 70%;
 }
 
 /* ***************** Pied de page  ***************** */
 footer {
-    flex-direction: column;
-    margin-top: 50px;
-    padding: 50px 30px 0 30px;
+	flex-direction: column;
+	margin-top: 50px;
+	padding: 50px 30px 0 30px;
 }
 
 footer ul:first-child,
 footer h2 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .item-footer {
-    width: auto;
-    margin-bottom: 30px;
+	width: auto;
+	margin-bottom: 30px;
 }
