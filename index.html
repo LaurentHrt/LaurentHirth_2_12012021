@@ -16,9 +16,11 @@
 
 	<body>
 		<header>
-			<div id="logo">
-				<a href=""><img src="images/logo/Reservia@3x.png" alt="logo" /></a>
-			</div>
+			<h1 id="logo">
+				<a href="">
+					<img src="images/logo/Reservia@3x.png" alt="Reservia" />
+				</a>
+			</h1>
 
 			<nav>
 				<a href="#section2-hebergement"><div>Hébergements</div></a>
@@ -30,12 +32,12 @@
 		</header>
 
 		<section id="section1-banniere">
-			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+			<div class="titre-section">Trouvez votre hébergement pour des vacances de rêve</div>
 			<div>En plein centre ville ou en pleine nature</div>
 
 			<div id="barre-recherche">
 				<a href="#"><i class="fas fa-map-marker-alt"></i></a>
-				<input class="textinput" type="text" name="location" value="Marseille, France" />
+				<input class="textinput" type="text" name="location" placeholder="Marseille, France" />
 				<button class="bouton-rechercher bouton-rechercher-texte">Rechercher</button>
 				<button class="bouton-rechercher bouton-rechercher-icone">
 					<i class="fas fa-search"></i>
@@ -88,8 +90,8 @@
 		</section>
 
 		<section id="section2-hebergement">
-			<article id="hebergement-recherche">
-				<div class="titre-section">Hébergements à Marseille</div>
+			<div id="hebergement-recherche">
+				<h2 class="titre-section">Hébergements à Marseille</h2>
 
 				<div class="liste" id="liste-hebergement">
 					<a href="#">
@@ -193,9 +195,9 @@
 				<div class="pied-section">
 					<a href="#">Afficher plus</a>
 				</div>
-			</article>
+			</div>
 
-			<article id="hebergement-populaire">
+			<div id="hebergement-populaire">
 				<div class="titre-section">
 					Les plus populaires
 					<a href="">
@@ -259,17 +261,20 @@
 						</div>
 					</a>
 				</div>
-			</article>
+			</div>
 		</section>
 
 		<section id="section3-activite">
-			<div class="titre-section">Activités à Marseille</div>
+			<h2 class="titre-section">Activités à Marseille</h2>
 
 			<div class="liste" id="liste-activite">
 				<div class="carte carte-activite">
 					<a href="">
 						<div class="carte-activite-image">
-							<img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo hebergement reno laithienne" />
+							<picture>
+								<source srcset="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" media="(min-width: 1200px)" />
+								<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo hebergement reno laithienne" />
+							</picture>
 						</div>
 						<div class="carte-activite-description">Vieux Port</div>
 					</a>
@@ -278,7 +283,10 @@
 				<div class="carte carte-activite">
 					<a href="">
 						<div class="carte-activite-image">
-							<img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo hebergement paul hermann" />
+							<picture>
+								<source srcset="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" media="(min-width: 1200px)" />
+								<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo hebergement paul hermann" />
+							</picture>
 						</div>
 						<div class="carte-activite-description">Fort de Pomègues</div>
 					</a>
@@ -294,7 +302,10 @@
 				<div class="carte carte-activite">
 					<a href="">
 						<div class="carte-activite-image">
-							<img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo hebergement kilyan sockalingum" />
+							<picture>
+								<source srcset="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" media="(min-width: 1200px)" />
+								<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo hebergement kilyan sockalingum" />
+							</picture>
 						</div>
 						<div class="carte-activite-description">Parc national des Calanques</div>
 					</a>

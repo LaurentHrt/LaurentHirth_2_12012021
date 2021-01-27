@@ -32,13 +32,6 @@ button {
 	font-family: inherit;
 }
 
-h1 {
-	margin-bottom: 5px;
-	margin-top: 0px;
-	font-size: 1.5em;
-	font-weight: 700;
-}
-
 h2 {
 	font-size: 1.2em;
 	margin: 10px 10px 15px 0;
@@ -102,12 +95,6 @@ section {
 	color: #0065fc;
 }
 
-article {
-	background-color: #f2f2f2;
-	border-radius: 15px;
-	padding: 40px;
-}
-
 ul {
 	list-style-type: none;
 }
@@ -132,7 +119,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	height: 110px;
-	margin-right: 54px;
+	margin-right: 77px;
 	margin-left: 54px;
 }
 
@@ -142,6 +129,10 @@ header div {
 	justify-content: center;
 	border-top: solid 3px white;
 	transition: 0.3s;
+}
+
+#logo {
+	margin-top: 43px;
 }
 
 #logo a {
@@ -188,7 +179,7 @@ nav div:hover {
 /* **************** Section 1 - Banniere ****************** */
 /* ******************************************************** */
 #section1-banniere {
-	margin-top: 5px;
+	margin-top: 20px;
 	margin-bottom: 30px;
 }
 
@@ -336,6 +327,9 @@ nav div:hover {
 #hebergement-recherche {
 	display: flex;
 	flex-direction: column;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	padding: 40px;
 }
 
 #hebergement-recherche .pied-section {
@@ -379,6 +373,9 @@ nav div:hover {
 #hebergement-populaire {
 	display: flex;
 	flex-direction: column;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	padding: 40px;
 }
 
 #liste-populaire {

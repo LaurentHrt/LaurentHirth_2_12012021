@@ -12,13 +12,15 @@ header {
 	justify-content: space-between;
 }
 
-header img {
+#logo {
+	margin-top: 10px;
 	padding-left: 20px;
 }
 
 header nav {
 	order: 3;
 	width: 100%;
+	height: 40px;
 }
 
 nav div {
@@ -28,8 +30,7 @@ nav div {
 }
 
 .bouton-inscrire {
-	padding-right: 20px;
-	padding-top: 0;
+	padding: 0 20px 20px 0;
 }
 
 /* ************* Section 1 - Banniere  ************* */
