@@ -16,13 +16,13 @@
 /* ******************************************************** */
 html {
     scroll-behavior: smooth;
-}
-
-body {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 15px;
     color: #181818;
+}
+
+body {
     margin: 0px;
 }
 
@@ -38,12 +38,12 @@ button {
 h1 {
     margin-bottom: 5px;
     margin-top: 0px;
-    font-size: 22px;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
 h2 {
-    font-size: large;
+    font-size: 1.2em;
     margin: 10px 10px 15px 0;
 }
 
@@ -83,7 +83,7 @@ section {
     justify-content: space-between;
     margin-bottom: 5px;
     margin-top: 0px;
-    font-size: 22px;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -121,7 +121,7 @@ ul {
     transition: 0.2s;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
-    font-size: 14px;
+    font-size: 0.9em;
 }
 
 .carte:hover {
@@ -205,7 +205,7 @@ nav div:hover {
 }
 
 #barre-recherche .fa-map-marker-alt {
-    font-size: larger;
+    font-size: 1.2em;
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     width: 50px;
@@ -226,14 +226,14 @@ nav div:hover {
     padding-left: 15px;
     width: 100%;
     min-width: 150px;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 .bouton-rechercher {
     color: white;
     background-color: #0065fc;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.2em;
     border: none;
     border-radius: 0 15px 15px 0;
     padding-left: 15px;
@@ -249,7 +249,6 @@ nav div:hover {
 
 .bouton-rechercher-icone {
     border-radius: 15px;
-    font-size: 15px;
     display: none;
 }
 
@@ -319,7 +318,7 @@ nav div:hover {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 10px;
-    font-size: 12px;
+    font-size: 0.8em;
 }
 
 #information:last-child {
@@ -377,7 +376,6 @@ nav div:hover {
 
 .carte-hebergement-description div:first-child {
     font-weight: 700;
-    font-size: 15px;
 }
 
 /* **************** Hebergement populaire ***************** */
@@ -414,7 +412,6 @@ nav div:hover {
 
 .carte-populaire-description div:first-child {
     font-weight: 700;
-    font-size: 15px;
 }
 
 /* ******************************************************** */
@@ -448,7 +445,6 @@ nav div:hover {
 .carte-activite-description {
     padding: 20px;
     font-weight: 700;
-    font-size: 15px;
     flex-grow: 2;
 }
 
