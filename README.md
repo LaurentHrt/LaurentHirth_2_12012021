@@ -1,11 +1,7 @@
 # Laurent Hirth
 
-Openclassrooms
+Openclassrooms - Parcours développeur Front-end
 
-Parcours développeur Front-end
-
-Projet 2
-
-[OC] - Projet 2 : Transformez une maquette en site web
+Projet 2 : Transformez une maquette en site web
 
 Lien vers la page : https://laurenthrt.github.io/LaurentHirth_2_12012021/
