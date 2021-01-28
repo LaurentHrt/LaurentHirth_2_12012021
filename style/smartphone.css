@@ -5,11 +5,16 @@ body {
 	margin: 0;
 }
 
+section {
+	padding: 0;
+}
+
 /* ***************** En tete  ***************** */
 header {
 	margin: 15px 0 0 0;
 	height: 110px;
 	justify-content: space-between;
+	padding: 0;
 }
 
 #logo {
