@@ -17,6 +17,7 @@ html {
 	font-weight: 500;
 	font-size: 15px;
 	color: #181818;
+	min-width: 300px;
 }
 
 body {
@@ -65,7 +66,9 @@ a:visited {
 }
 
 section {
-	margin: 30px 50px 40px 50px;
+	margin: 30px auto 40px;
+	padding: 0 50px 0;
+	max-width: 1500px;
 }
 
 .titre-section {
@@ -119,8 +122,10 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	height: 110px;
-	margin-right: 77px;
-	margin-left: 54px;
+	max-width: 1500px;
+	margin: auto;
+	padding-right: 77px;
+	padding-left: 54px;
 }
 
 header div {
@@ -166,7 +171,7 @@ nav div:hover {
 }
 
 .bouton-inscrire {
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 .bouton-inscrire a,
