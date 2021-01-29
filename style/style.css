@@ -120,7 +120,6 @@ ul {
 /* ******************************************************** */
 header {
 	display: flex;
-	flex-wrap: wrap;
 	height: 110px;
 	max-width: 1500px;
 	margin: auto;
@@ -137,7 +136,7 @@ header div {
 }
 
 #logo {
-	margin-top: 43px;
+	margin-top: 30px;
 }
 
 #logo a {
